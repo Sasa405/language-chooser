@@ -1,0 +1,91 @@
+/* App.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7b404;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: #e7b404;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* Content styles */
+.content {
+
+    background-color: #e7b404;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+h2 {
+    font-size: 5em;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* Dropdown styles */
+select {
+    font-size: 1.5em;
+    background-color: #2d364d;
+    color: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Styling the selected option in the dropdown */
+select option:checked {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styling the dropdown arrow */
+select::-ms-expand {
+    display: none;
+}
+
+select::after {
+    content: "\25BC";
+    color: #333;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+  
